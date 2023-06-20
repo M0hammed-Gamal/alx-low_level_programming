@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * numlength - returns the lenght of string
+ * numLength - returns the lenght of string
  *
  * @num: operand unmber
  *
  * Return: number of digits
 */
 
-int numlenghth(int num)
+int numLength(int num)
 {
 	int lenght = 0;
 
