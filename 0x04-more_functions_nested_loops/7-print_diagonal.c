@@ -3,9 +3,8 @@
 /**
  * print_diagonal - print a diagonal line
  *
- * @n: is the number of time the \ charcter
- *
- * should be printed
+ * @n: is the number of times the \ charcter
+ *	should be printed
 */
 
 void print_diagonal(int n)
