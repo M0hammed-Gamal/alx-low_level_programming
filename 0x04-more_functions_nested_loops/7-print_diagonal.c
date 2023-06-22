@@ -1,10 +1,10 @@
-#include "main.h"
+#include"main.h"
 
 /**
  * print_diagonal - print a diagonal line
  *
  * @n: is the number of time the \ charcter
- * should be printed
+ *	should be printed
 */
 
 void print_diagonal(int n)
