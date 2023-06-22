@@ -1,18 +1,16 @@
-#include"main.h"
-#include<stdio.h>
+#include "main.h"
+#include <stdio.h>
 
 /**
  * print_number - Function that prints an integer.
  * @n: int type number
  * Description: Can only use _putchar to print.
  */
-
 void print_number(int n)
 {
 	long m; /* power of 10 */
 	int c; /* boolean check */
 	long num; /* convert int to long */
-
 	num = n;
 	/* negatives */
 	if (num < 0)
@@ -20,7 +18,6 @@ void print_number(int n)
 		num *= -1;
 		_putchar('-');
 	}
-
 	/* count up */
 	m = 1;
 	c = 1;
@@ -31,7 +28,6 @@ void print_number(int n)
 		else
 			c = 0;
 	}
-
 	/* count down */
 	while (num >= 0)
 	{
