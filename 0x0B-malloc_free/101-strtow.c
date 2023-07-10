@@ -8,7 +8,7 @@
  *
  * Return: number of words
  */
-int number(char *str);
+int number(char *str)
 {
 	int a, num = 0;
 
@@ -42,7 +42,7 @@ void free_everything(char **string, int i)
  * @str: string being passed
  * Return: null if string is empty or null or function fails
  */
-char **strtow(char *str);
+char **strtow(char *str)
 {
 	int total_words = 0, b = 0, c = 0, length = 0;
 	char **words, *found_word;
