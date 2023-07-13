@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i][j] > 57 || argv[i][j] < 48)
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
 				printf("Error\n");
 				exit(98);
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	long mul = get_long(&argv[1][0]) * get_long(&argv[2][0]);
+	mul = get_long(&argv[1][0]) * get_long(&argv[2][0]);
 	printf("%ld\n", mul);
 
 	return (0);
