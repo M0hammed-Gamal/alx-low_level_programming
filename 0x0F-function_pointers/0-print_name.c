@@ -2,15 +2,16 @@
 #include <stdio.h>
 
 /**
-* print_name - function that prints a name.
-* @name : name print
-* @f : pointer called to function
-*/
-
+ * print_name - prints a name.
+ * @name: string to print.
+ * @f: fuction to use.
+ *
+ * Return: NOTHING
+ */
 void print_name(char *name, void (*f)(char *))
 {
-	if (f == NULL || name == NULL)
+	if (!f || !name)
 		return;
-
-		f(name);
+	f(name);
 }
+
