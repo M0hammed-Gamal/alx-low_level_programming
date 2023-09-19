@@ -1,27 +1,19 @@
-#include "main.h"
+int add(int a, int b) {
+    return a + b;
+}
 
-/**
-* _atoi - funtion
-* @s : pointer
-* Return: int
-*/
+int sub(int a, int b) {
+    return a - b;
+}
 
-int _atoi(char *s)
-{
-	unsigned int val = 0;
-	int c;
-	int o = 1;
+int mul(int a, int b) {
+    return a * b;
+}
 
-	for (c = 0; c[s] != '\0' ; c++)
-	{
-		if ((c[s] >= '0') && (c[s] <= '9'))
-			val = ((val * 10) + (c[s] - '0'));
+int div(int a, int b) {
+    return a / b;
+}
 
-		if (val != 0 && !((c[s] >= '0') && (c[s] <= '9')))
-			break;
-
-		if (c[s] == '-')
-			o = o * (-1);
-	}
-	return (o * val);
+int mod(int a, int b) {
+    return a % b;
 }
